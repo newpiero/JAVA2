@@ -6,11 +6,13 @@ import java.awt.*;
 public class GameCanvas extends JPanel {
 
     MainCircles gameWindow;
+    ColorCanvas colorCan = new ColorCanvas();
     private long lastFrameTime;
+
 
     GameCanvas(MainCircles gameWindow) {
         this.gameWindow = gameWindow;
-        setBackground(Color.BLUE);
+        setBackground(Color.getHSBColor(ColorCanvas.);
         lastFrameTime = System.nanoTime();
     }
 
